@@ -1,0 +1,1061 @@
+/*==========================================================
+    GLOBAL AIRLINE
+    CONTACT PAGE
+
+    PART 1A STYLESHEET
+
+    Sections Included
+    -----------------
+    1. Contact Hero Section
+    2. Hero Content
+    3. Buttons
+    4. Responsive Design
+==========================================================*/
+
+
+/*==========================================================
+    CONTACT HERO SECTION
+==========================================================*/
+
+.contact-hero{
+
+    min-height:80vh;
+
+    background-image:url("images/contact-plane.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/*==========================================================
+    HERO OVERLAY
+==========================================================*/
+
+.contact-overlay{
+
+    width:100%;
+
+    min-height:80vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(255,255,255,0.65);
+
+}
+
+
+
+/*==========================================================
+    HERO CONTENT
+==========================================================*/
+
+.contact-hero-content{
+
+    width:85%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+.contact-hero-content h1{
+
+    font-size:60px;
+
+    color:#1D3557;
+
+    max-width:700px;
+
+    margin-bottom:25px;
+
+}
+
+
+.contact-hero-content p{
+
+    max-width:650px;
+
+    color:#555;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/*==========================================================
+    HERO BUTTONS
+==========================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.primary-btn,
+.secondary-btn{
+
+    display:inline-block;
+
+    padding:16px 35px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+/* Primary Button */
+
+.primary-btn{
+
+    background:#C1121F;
+
+    color:#ffffff;
+
+}
+
+
+.primary-btn:hover{
+
+    background:#1D3557;
+
+}
+
+
+
+/* Secondary Button */
+
+.secondary-btn{
+
+    background:#1D3557;
+
+    color:#ffffff;
+
+}
+
+
+.secondary-btn:hover{
+
+    background:#C1121F;
+
+}
+
+
+
+/*==========================================================
+    RESPONSIVE DESIGN
+==========================================================*/
+
+
+@media(max-width:768px){
+
+
+    .contact-hero{
+
+        min-height:70vh;
+
+    }
+
+
+    .contact-overlay{
+
+        min-height:70vh;
+
+    }
+
+
+    .contact-hero-content h1{
+
+        font-size:42px;
+
+    }
+
+
+    .contact-hero-content p{
+
+        font-size:17px;
+
+    }
+
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:250px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .contact-hero-content h1{
+
+        font-size:34px;
+
+    }
+
+
+    .contact-hero-content{
+
+        width:90%;
+
+    }
+
+
+    .primary-btn,
+    .secondary-btn{
+
+        text-align:center;
+
+        padding:14px 25px;
+
+    }
+
+
+}
+
+/*==========================================================
+    GLOBAL AIRLINE
+    CONTACT PAGE
+
+    PART 1B STYLESHEET
+
+    Sections Included
+    -----------------
+    1. Contact Information Section
+    2. Contact Cards
+    3. Icons
+    4. Responsive Design
+==========================================================*/
+
+
+/*==========================================================
+    CONTACT INFORMATION SECTION
+==========================================================*/
+
+.contact-info{
+
+    padding:90px 8%;
+
+    background:#ffffff;
+
+}
+
+
+.contact-info .section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+.contact-info .section-heading h2{
+
+    font-size:42px;
+
+    color:#1D3557;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-info .section-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================================
+    CONTACT CARDS GRID
+==========================================================*/
+
+.contact-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/*==========================================================
+    CONTACT CARD
+==========================================================*/
+
+.contact-card{
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    border-top:5px solid #C1121F;
+
+    transition:.35s;
+
+}
+
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+
+
+/*==========================================================
+    CONTACT ICON
+==========================================================*/
+
+.contact-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#eef3fa;
+
+    font-size:35px;
+
+    transition:.3s;
+
+}
+
+
+.contact-card:hover .contact-icon{
+
+    background:#C1121F;
+
+}
+
+
+
+/*==========================================================
+    CARD CONTENT
+==========================================================*/
+
+.contact-card h3{
+
+    color:#1D3557;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-card strong{
+
+    display:block;
+
+    color:#C1121F;
+
+    font-size:16px;
+
+}
+
+
+
+/*==========================================================
+    RESPONSIVE DESIGN
+==========================================================*/
+
+
+@media(max-width:1100px){
+
+    .contact-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .contact-info{
+
+        padding:70px 6%;
+
+    }
+
+
+    .contact-info .section-heading h2{
+
+        font-size:34px;
+
+    }
+
+
+    .contact-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .contact-card{
+
+        padding:30px;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .contact-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:30px;
+
+    }
+
+
+    .contact-card h3{
+
+        font-size:22px;
+
+    }
+
+
+}
+
+/*==========================================================
+    GLOBAL AIRLINE
+    CONTACT PAGE
+
+    PART 2A STYLESHEET
+
+    Sections Included
+    -----------------
+    1. Contact Form Section
+    2. Form Layout
+    3. Input Styling
+    4. Submit Button
+    5. Responsive Design
+==========================================================*/
+
+
+/*==========================================================
+    CONTACT FORM SECTION
+==========================================================*/
+
+.contact-form-section{
+
+    padding:90px 8%;
+
+    background:#f7f9fc;
+
+}
+
+
+.contact-form-section .section-heading{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+
+.contact-form-section .section-heading h2{
+
+    font-size:42px;
+
+    color:#1D3557;
+
+    margin-bottom:15px;
+
+}
+
+
+.contact-form-section .section-heading p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================================
+    FORM CONTAINER
+==========================================================*/
+
+.form-container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+/*==========================================================
+    FORM GRID
+==========================================================*/
+
+.contact-form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.form-group label{
+
+    color:#1D3557;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+
+.form-group input,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+    transition:.3s;
+
+}
+
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#1D3557;
+
+    box-shadow:0 0 8px rgba(29,53,87,.15);
+
+}
+
+
+
+.form-group textarea{
+
+    resize:none;
+
+}
+
+
+
+/*==========================================================
+    FULL WIDTH MESSAGE FIELD
+==========================================================*/
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+
+
+/*==========================================================
+    SUBMIT BUTTON
+==========================================================*/
+
+.submit-btn{
+
+    grid-column:1 / -1;
+
+    width:220px;
+
+    margin:auto;
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#C1121F;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.submit-btn:hover{
+
+    background:#1D3557;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/*==========================================================
+    RESPONSIVE DESIGN
+==========================================================*/
+
+
+@media(max-width:768px){
+
+
+    .contact-form-section{
+
+        padding:70px 6%;
+
+    }
+
+
+    .contact-form-section .section-heading h2{
+
+        font-size:34px;
+
+    }
+
+
+    .form-container{
+
+        padding:30px;
+
+    }
+
+
+    .contact-form{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .form-container{
+
+        padding:25px;
+
+    }
+
+
+    .submit-btn{
+
+        width:100%;
+
+    }
+
+
+}
+
+
+/*==========================================================
+    GLOBAL AIRLINE
+    CONTACT PAGE
+
+    PART 2B STYLESHEET
+
+    Sections Included
+    -----------------
+    1. Global Offices Section
+    2. Office Cards
+    3. Office Icons
+    4. Responsive Design
+==========================================================*/
+
+
+/*==========================================================
+    GLOBAL OFFICES SECTION
+==========================================================*/
+
+.global-offices{
+
+    padding:90px 8%;
+
+    background:#ffffff;
+
+}
+
+
+.global-offices .section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+.global-offices .section-heading h2{
+
+    font-size:42px;
+
+    color:#1D3557;
+
+    margin-bottom:15px;
+
+}
+
+
+.global-offices .section-heading p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+/*==========================================================
+    OFFICE GRID
+==========================================================*/
+
+.office-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/*==========================================================
+    OFFICE CARD
+==========================================================*/
+
+.office-card{
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    border-top:5px solid #C1121F;
+
+    transition:.35s;
+
+}
+
+
+.office-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+
+
+/*==========================================================
+    OFFICE ICON
+==========================================================*/
+
+.office-icon{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#eef3fa;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+
+.office-card:hover .office-icon{
+
+    background:#C1121F;
+
+}
+
+
+
+/*==========================================================
+    OFFICE CONTENT
+==========================================================*/
+
+.office-card h3{
+
+    color:#1D3557;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+
+.office-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+
+.office-card ul{
+
+    list-style:none;
+
+}
+
+
+.office-card ul li{
+
+    color:#555;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+
+.office-card ul li:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+/*==========================================================
+    RESPONSIVE DESIGN
+==========================================================*/
+
+
+@media(max-width:1100px){
+
+
+    .office-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .global-offices{
+
+        padding:70px 6%;
+
+    }
+
+
+    .global-offices .section-heading h2{
+
+        font-size:34px;
+
+    }
+
+
+    .office-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .office-card{
+
+        padding:30px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .office-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:30px;
+
+    }
+
+
+    .office-card h3{
+
+        font-size:22px;
+
+    }
+
+
+}

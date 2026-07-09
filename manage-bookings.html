@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         META INFORMATION
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Manage Booking | Global Airline
+
+    </title>
+
+    <!-- Main Stylesheet -->
+
+    <link rel="stylesheet"
+          href="./Css/manage-bookings.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <!-- Airline Logo -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                Global Airline
+
+            </a>
+
+        </div>
+
+        <!-- Navigation Links -->
+
+        <ul class="nav-links">
+
+            <li>
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="book-flight.html">
+
+                    Book Flight
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="destinations.html">
+
+                    Destinations
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="manage-booking.html"
+                   class="active">
+
+                    Manage Booking
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="travel-info.html">
+
+                    Travel Info
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <!-- Sign In Button -->
+
+        <a href="#"
+           class="login-btn">
+
+            Sign In
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     HERO SECTION
+========================================== -->
+
+<section class="manage-hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Manage Your Booking
+
+            </h1>
+
+            <p>
+
+                View your itinerary, change your flight,
+                select seats, add baggage and much more—
+                all in one place.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     BOOKING SEARCH SECTION
+========================================== -->
+
+<section class="booking-search">
+
+    <div class="search-container">
+
+        <div class="search-heading">
+
+            <h2>
+
+                Retrieve Your Booking
+
+            </h2>
+
+            <p>
+
+                Enter your booking reference and last name
+                to access your reservation.
+
+            </p>
+
+        </div>
+
+        <form class="booking-form">
+
+            <!-- Booking Reference -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Booking Reference (PNR)
+
+                </label>
+
+                <input type="text"
+                       placeholder="Example: GLA482">
+
+            </div>
+
+            <!-- Last Name -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Last Name
+
+                </label>
+
+                <input type="text"
+                       placeholder="Enter your last name">
+
+            </div>
+
+            <!-- Search Button -->
+
+            <div class="form-group">
+
+                <button type="submit">
+
+                    Retrieve Booking
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     QUICK BOOKING ACTIONS
+====================================================== -->
+
+<section class="booking-actions">
+
+    <div class="section-heading">
+
+        <h2>
+
+            Manage Your Journey
+
+        </h2>
+
+        <p>
+
+            Make changes to your booking quickly and conveniently before your flight.
+
+        </p>
+
+    </div>
+
+    <div class="actions-grid">
+
+        <!-- Change Flight -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                ✈️
+
+            </div>
+
+            <h3>
+
+                Change Flight
+
+            </h3>
+
+            <p>
+
+                Modify your travel date, departure time or destination with ease.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Manage
+
+            </a>
+
+        </div>
+
+
+        <!-- Select Seat -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                💺
+
+            </div>
+
+            <h3>
+
+                Select Your Seat
+
+            </h3>
+
+            <p>
+
+                Reserve your preferred seat before departure for a more comfortable trip.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Choose Seat
+
+            </a>
+
+        </div>
+
+
+        <!-- Add Baggage -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                🧳
+
+            </div>
+
+            <h3>
+
+                Add Extra Baggage
+
+            </h3>
+
+            <p>
+
+                Purchase additional checked baggage and avoid airport fees.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Add Baggage
+
+            </a>
+
+        </div>
+
+
+        <!-- Upgrade Cabin -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                ⭐
+
+            </div>
+
+            <h3>
+
+                Upgrade Cabin
+
+            </h3>
+
+            <p>
+
+                Upgrade to Premium Economy, Business or First Class.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Upgrade
+
+            </a>
+
+        </div>
+
+
+        <!-- Special Assistance -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                ♿
+
+            </div>
+
+            <h3>
+
+                Special Assistance
+
+            </h3>
+
+            <p>
+
+                Request wheelchair services, medical assistance or other travel support.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Request
+
+            </a>
+
+        </div>
+
+
+        <!-- Cancel Booking -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+
+                ❌
+
+            </div>
+
+            <h3>
+
+                Cancel Booking
+
+            </h3>
+
+            <p>
+
+                Review cancellation options and request a refund where applicable.
+
+            </p>
+
+            <a href="#" class="action-btn">
+
+                Cancel
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Continue with Part 1B -->
+
+<!-- =====================================================
+     BOOKING DASHBOARD
+====================================================== -->
+
+<section class="booking-dashboard">
+
+    <div class="section-heading">
+
+        <h2>
+
+            Your Booking Dashboard
+
+        </h2>
+
+        <p>
+
+            Review your upcoming journey and manage every detail of your trip.
+
+        </p>
+
+    </div>
+
+    <div class="dashboard-container">
+
+        <!-- Booking Information -->
+
+        <div class="booking-card">
+
+            <h3>
+
+                Booking Information
+
+            </h3>
+
+            <ul>
+
+                <li><strong>Booking Reference:</strong> GLA482</li>
+
+                <li><strong>Passenger:</strong> John Smith</li>
+
+                <li><strong>Flight:</strong> GA203</li>
+
+                <li><strong>Date:</strong> 15 August 2026</li>
+
+                <li><strong>Departure:</strong> Lagos (LOS)</li>
+
+                <li><strong>Arrival:</strong> London Heathrow (LHR)</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Flight Details -->
+
+        <div class="booking-card">
+
+            <h3>
+
+                Flight Details
+
+            </h3>
+
+            <ul>
+
+                <li><strong>Departure Time:</strong> 09:15 AM</li>
+
+                <li><strong>Arrival Time:</strong> 03:30 PM</li>
+
+                <li><strong>Terminal:</strong> Terminal 2</li>
+
+                <li><strong>Gate:</strong> B18</li>
+
+                <li><strong>Seat:</strong> 18A</li>
+
+                <li><strong>Cabin:</strong> Economy Class</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Travel Extras -->
+
+        <div class="booking-card">
+
+            <h3>
+
+                Travel Extras
+
+            </h3>
+
+            <ul>
+
+                <li><strong>Checked Baggage:</strong> 2 × 23kg</li>
+
+                <li><strong>Carry-on:</strong> 7kg</li>
+
+                <li><strong>Meal:</strong> Vegetarian</li>
+
+                <li><strong>Priority Boarding:</strong> Included</li>
+
+                <li><strong>Lounge Access:</strong> Not Included</li>
+
+                <li><strong>Flight Status:</strong> On Time</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Dashboard Buttons -->
+
+    <div class="dashboard-buttons">
+
+        <a href="#" class="primary-btn">
+
+            Download Boarding Pass
+
+        </a>
+
+        <a href="#" class="secondary-btn">
+
+            Download Itinerary
+
+        </a>
+
+        <a href="#" class="secondary-btn">
+
+            Modify Booking
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     FLIGHT STATUS & TRAVEL SUPPORT
+====================================================== -->
+
+<section class="travel-support">
+
+    <div class="section-heading">
+
+        <h2>
+
+            Flight Status & Travel Support
+
+        </h2>
+
+        <p>
+
+            Stay informed before your journey with live flight information, travel reminders and support resources.
+
+        </p>
+
+    </div>
+
+    <div class="support-grid">
+
+        <!-- Flight Status -->
+
+        <div class="support-card">
+
+            <h3>Flight Status</h3>
+
+            <ul>
+
+                <li><strong>Flight:</strong> GA203</li>
+
+                <li><strong>Status:</strong> 🟢 On Time</li>
+
+                <li><strong>Departure:</strong> 09:15 AM</li>
+
+                <li><strong>Arrival:</strong> 03:30 PM</li>
+
+                <li><strong>Gate:</strong> B18</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Baggage -->
+
+        <div class="support-card">
+
+            <h3>Baggage Allowance</h3>
+
+            <ul>
+
+                <li><strong>Cabin Bag:</strong> 7kg</li>
+
+                <li><strong>Checked Bag:</strong> 2 × 23kg</li>
+
+                <li><strong>Extra Bags:</strong> Available</li>
+
+                <li><strong>Sports Equipment:</strong> Accepted</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Travel Checklist -->
+
+        <div class="support-card">
+
+            <h3>Travel Checklist</h3>
+
+            <ul class="checklist">
+
+                <li>✅ Passport Ready</li>
+
+                <li>✅ Visa Confirmed</li>
+
+                <li>✅ Online Check-in</li>
+
+                <li>✅ Baggage Packed</li>
+
+                <li>✅ Travel Insurance</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FREQUENTLY ASKED QUESTIONS
+====================================================== -->
+
+<section class="faq">
+
+    <div class="section-heading">
+
+        <h2>
+
+            Frequently Asked Questions
+
+        </h2>
+
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+
+            <h3>Can I change my booking?</h3>
+
+            <p>
+
+                Yes. Changes are subject to your fare conditions and seat availability.
+
+            </p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h3>How do I add extra baggage?</h3>
+
+            <p>
+
+                Retrieve your booking and select "Add Extra Baggage" before departure.
+
+            </p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h3>When does online check-in open?</h3>
+
+            <p>
+
+                Online check-in opens 24 hours before departure for most flights.
+
+            </p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h3>How can I request special assistance?</h3>
+
+            <p>
+
+                Use the "Special Assistance" option or contact our customer support team.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CUSTOMER SUPPORT
+====================================================== -->
+
+<section class="customer-support">
+
+    <div class="support-banner">
+
+        <h2>
+
+            Need More Help?
+
+        </h2>
+
+        <p>
+
+            Our Global Airline support team is available 24 hours a day, 7 days a week.
+
+        </p>
+
+        <div class="support-buttons">
+
+            <a href="contact.html" class="primary-btn">
+
+                Contact Support
+
+            </a>
+
+            <a href="#" class="secondary-btn">
+
+                Live Chat
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     NEWSLETTER SECTION
+====================================================== -->
+
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>
+
+                Stay Updated
+
+            </h2>
+
+            <p>
+
+                Subscribe to receive exclusive flight offers,
+                travel updates, destination inspiration and
+                important airline announcements.
+
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required>
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <!-- Company -->
+
+        <div class="footer-column">
+
+            <h3>
+
+                Global Airline
+
+            </h3>
+
+            <p>
+
+                Connecting people, businesses and cultures
+                through safe, reliable and world-class air travel.
+
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-column">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="book-flight.html">Book Flight</a></li>
+
+                <li><a href="destinations.html">Destinations</a></li>
+
+                <li><a href="manage-booking.html">Manage Booking</a></li>
+
+                <li><a href="travel-info.html">Travel Info</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-column">
+
+            <h3>
+
+                Contact Us
+
+            </h3>
+
+            <ul>
+
+                <li>📍 Global Airline Headquarters</li>
+
+                <li>📞 +1 (800) 555-1000</li>
+
+                <li>✉️ support@globalairline.com</li>
+
+                <li>🕒 24 Hours | 7 Days</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Legal -->
+
+        <div class="footer-column">
+
+            <h3>
+
+                Legal
+
+            </h3>
+
+            <ul>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+                <li><a href="#">Cookie Policy</a></li>
+
+                <li><a href="#">Terms & Conditions</a></li>
+
+                <li><a href="#">Accessibility</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <div class="social-links">
+
+            <a href="#">Facebook</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">X</a>
+
+            <a href="#">LinkedIn</a>
+
+            <a href="#">YouTube</a>
+
+        </div>
+
+        <p>
+
+            © 2026 Global Airline. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
