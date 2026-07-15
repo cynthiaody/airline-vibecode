@@ -2614,270 +2614,91 @@ footer{
 }
 
 
-/*==========================================================
-    FOOTER COLUMNS
-==========================================================*/
+/* ====================================================
+   FOOTER SECTION
+==================================================== */
+footer{
+    background-color: white;
 
-.footer-column h3{
+    padding-top: 50px;
 
-    color:#1D3557;
-
-    font-size:22px;
-
-    margin-bottom:20px;
-
+    margin-top: 40px;
 }
 
 
-.footer-column p{
+/* Footer Container */
+.footer-container{
+    display: grid;
 
-    color:#666;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-    line-height:1.8;
+    gap: 30px;
 
+    padding: 0 8% 40px;
 }
 
 
-.footer-column ul{
-
-    list-style:none;
-
+/* Footer Headings */
+.footer-container h3,
+.footer-container h4{
+    margin-bottom: 15px;
 }
 
 
-.footer-column ul li{
+/* Footer Links */
+.footer-links a,
+.social-media a{
+    display: block;
 
-    margin-bottom:12px;
+    margin-bottom: 10px;
 
-    color:#666;
+    text-decoration: none;
 
+    color: #1d3557;
+
+    transition: 0.3s;
 }
 
 
-.footer-column ul li a{
-
-    text-decoration:none;
-
-    color:#666;
-
-    transition:.3s;
-
+/* Footer Hover */
+.footer-links a:hover,
+.social-media a:hover{
+    color: #c1121f;
 }
 
 
-.footer-column ul li a:hover{
-
-    color:#C1121F;
-
-}
-
-
-
-/*==========================================================
-    FOOTER BOTTOM
-==========================================================*/
-
+/* Footer Bottom */
 .footer-bottom{
+    text-align: center;
 
-    margin-top:60px;
+    padding: 20px;
 
-    padding:30px 8%;
+    border-top: 1px solid #ddd;
 
-    background:#1D3557;
-
-    color:#ffffff;
-
-    text-align:center;
-
+    font-size: 14px;
 }
 
 
-.social-links{
+/* ====================================================
+   RESPONSIVE DESIGN
+==================================================== */
+@media(max-width: 900px){
 
-    margin-bottom:20px;
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2{
+        font-size: 42px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
 }
-
-
-.social-links a{
-
-    color:#ffffff;
-
-    text-decoration:none;
-
-    margin:0 12px;
-
-    transition:.3s;
-
-}
-
-
-.social-links a:hover{
-
-    color:#C1121F;
-
-}
-
-
-.legal-links{
-
-    margin-bottom:20px;
-
-}
-
-
-.legal-links a{
-
-    color:#dce5f0;
-
-    text-decoration:none;
-
-    margin:0 10px;
-
-    font-size:14px;
-
-}
-
-
-.legal-links a:hover{
-
-    color:#ffffff;
-
-}
-
-
-.footer-bottom p{
-
-    color:#dce5f0;
-
-    font-size:14px;
-
-}
-
-
-
-/*==========================================================
-    RESPONSIVE DESIGN
-==========================================================*/
-
-
-@media(max-width:1100px){
-
-
-    .footer-container{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-
-    .newsletter-container{
-
-        flex-direction:column;
-
-        text-align:center;
-
-    }
-
-
-    .newsletter-form{
-
-        justify-content:center;
-
-    }
-
-
-}
-
-
-
-@media(max-width:768px){
-
-
-    .newsletter{
-
-        padding:60px 6%;
-
-    }
-
-
-    .newsletter-container{
-
-        padding:35px 25px;
-
-    }
-
-
-    .newsletter-content h2{
-
-        font-size:30px;
-
-    }
-
-
-    .newsletter-form{
-
-        flex-direction:column;
-
-        width:100%;
-
-    }
-
-
-    .newsletter-form input{
-
-        width:100%;
-
-    }
-
-
-    .footer-container{
-
-        grid-template-columns:1fr;
-
-        width:88%;
-
-    }
-
-
-    .footer-bottom{
-
-        padding:30px 5%;
-
-    }
-
-
-    .social-links a,
-    .legal-links a{
-
-        display:inline-block;
-
-        margin:8px;
-
-    }
-
-
-}
-
-
-
-@media(max-width:480px){
-
-
-    .newsletter-content h2{
-
-        font-size:26px;
-
-    }
-
-
-    .footer-column h3{
-
-        font-size:20px;
-
-    }
-
-
-}
-
-

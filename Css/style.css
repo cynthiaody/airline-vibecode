@@ -42,6 +42,28 @@ body{
 }
 
 
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+
 /* Logo Container */
 .logo{
     display: flex;
@@ -505,6 +527,33 @@ footer{
     border-top: 1px solid #ddd;
 
     font-size: 14px;
+}
+
+/* Hamburger responsiveness for mobile and tablet */
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #002b5b;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 
